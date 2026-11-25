@@ -1,6 +1,6 @@
 # คู่มือผู้ดูแล pulse-team
 
-- ใช้ `hermes -p <profile> config set KEY VALUE` เปลี่ยน config ไม่เขียน YAML ด้วยมือ; เก็บ model, token, owner/channel gates เดิม (ตั้ง `fallback_providers` ให้ครบทั้ง 4 โปรไฟล์และตรวจด้วย `hermes -p <profile> fallback list` เพื่อกันสตรีมหลุดแบบไม่มีตัวสำรอง)
+- ใช้ `hermes -p <profile> config set KEY VALUE` เปลี่ยน config ไม่เขียน YAML ด้วยมือ; เก็บ model, token, owner/channel gates เดิม (ตั้ง `fallback_providers` ให้ครบทั้ง 11 โปรไฟล์และตรวจด้วย `hermes -p <profile> fallback list` เพื่อกันสตรีมหลุดแบบไม่มีตัวสำรอง)
 - บน Discord หากเมนู slash command error ให้พิมพ์ `/new` หรือ `/delegation profile_routes --now` เป็นข้อความธรรมดาแทน
 - ติดตั้ง plugin เฉพาะ Chief ผ่าน `hermes -p pulse-general plugins install advanced-delegation --enable`; target ไม่ต้องติดตั้ง plugin
 - ตั้ง `delegation.backends.profile_routes.profiles` เป็นรายการ `{name, description}` และ `delegation.backend=profile_routes`; จำกัด `max_concurrent_children=3`, `max_spawn_depth=1`; ไม่มี self route
